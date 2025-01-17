@@ -10,7 +10,8 @@ import {
 import stylesheet from "~/app/routing/app.css?url";
 import {store} from "~/app/store/store";
 import {Provider} from "react-redux";
-import type {Route} from "../../../.react-router/types/src/app/+types";
+import type {Route} from "./+types/root";
+import React from "react";
 
 export const links: Route.LinksFunction = () => [
   {rel: "preconnect", href: "https://fonts.googleapis.com"},
