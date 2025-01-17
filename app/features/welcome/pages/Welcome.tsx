@@ -2,7 +2,6 @@ import Header from "~/features/welcome/widgets/Header";
 import ResourceList from "~/features/welcome/widgets/ResourseList";
 import type {JSX} from "react";
 import Clicker from "~/features/welcome/widgets/Clicker";
-import {NavLink} from "react-router";
 
 interface Resource {
   href: string;
@@ -24,8 +23,11 @@ export default function Welcome({resources}: Props) {
           <ResourceList resources={resources}/>
         </div>
         <Clicker/>
-        <NavLink to={"/"}>Back to home</NavLink>
+        <p className="text-gray-300">
+          Powered by sensei kowlad
+        </p>
       </div>
+
     </main>
   )
 }
