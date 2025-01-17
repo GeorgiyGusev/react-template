@@ -1,8 +1,11 @@
-import {Header} from "~/widgets/header";
-import {ResourceList} from "~/widgets/resourse-list";
-import {Clicker} from "~/widgets/clicker";
-import {useLoaderData} from "react-router";
-import type {Resourse} from "~/entities/resourse-item";
+import { useLoaderData } from "react-router";
+import type { Resourse } from "@/entities/resourse-item";
+import { Header } from "@/widgets/header";
+import React from "react";
+import { ResourceList } from "@/widgets/resourse-list";
+import { Clicker } from "@/widgets/clicker";
+import { Button, buttonVariants } from "@/shared/shadcn/components/ui/button";
+import { Mail } from "lucide-react";
 
 
 export default function Welcome() {
@@ -19,8 +22,10 @@ export default function Welcome() {
         <p className="text-gray-300">
           Powered by sensei kowlad
         </p>
+        <Button variant="destructive">
+          <Mail/> Login with Email
+        </Button>
       </div>
-
     </main>
   )
 }

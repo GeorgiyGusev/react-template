@@ -1,4 +1,4 @@
-import {Welcome} from "~/pages/welcome";
+import {Welcome} from "@/pages/welcome";
 
 export function meta() {
   return [

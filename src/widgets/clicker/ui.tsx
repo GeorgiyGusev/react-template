@@ -1,4 +1,4 @@
-import {Counter} from "~/features/counter";
+import {Counter} from "@/features/counter";
 
 function Clicker() {
   return (

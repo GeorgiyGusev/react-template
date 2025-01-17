@@ -1,4 +1,4 @@
-import {type Resourse, ResourceItem} from "~/entities/resourse-item";
+import {type Resourse, ResourceItem} from "@/entities/resourse-item";
 
 interface Props {
   resources: Resourse[];

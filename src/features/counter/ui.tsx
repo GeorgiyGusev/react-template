@@ -1,5 +1,5 @@
-import {useAppDispatch, useAppSelector} from "~/app/store/hooks";
-import {selectCount, incrementByAmount, reset} from "~/features/counter/rtk-slice";
+import {useAppDispatch, useAppSelector} from "@/app/store/hooks";
+import {selectCount, reset, increment} from "@/features/counter/rtk-slice";
 
 
 function Counter() {
@@ -12,7 +12,7 @@ function Counter() {
         {count}
       </p>
       <button
-        onClick={() => dispatch(incrementByAmount(23))}
+        onClick={() => dispatch(increment())}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >
         Increment

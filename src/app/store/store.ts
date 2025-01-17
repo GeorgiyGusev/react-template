@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit'
-import {counterSlice} from "~/features/counter/rtk-slice";
+import {counterSlice} from "@/features/counter/rtk-slice";
 
 export const store = configureStore({
   reducer: {

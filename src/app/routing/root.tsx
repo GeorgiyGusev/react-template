@@ -7,14 +7,15 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import stylesheet from "~/app/routing/app.css?url";
-import {store} from "~/app/store/store";
-import {Provider} from "react-redux";
-import type {Route} from "./+types/root";
+import stylesheet from "@/app/routing/app.css?url";
+import { store } from "@/app/store/store";
+import { Provider } from "react-redux";
+import type { Route } from "./+types/root";
 import React from "react";
 
+
 export const links: Route.LinksFunction = () => [
-  {rel: "preconnect", href: "https://fonts.googleapis.com"},
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
     href: "https://fonts.gstatic.com",
@@ -24,10 +25,10 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
-  {rel: "stylesheet", href: stylesheet},
+  { rel: "stylesheet", href: stylesheet },
 ];
 
-export function Layout({children}: { children: React.ReactNode }) {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
     <head>
@@ -53,7 +54,7 @@ export default function App() {
   </>
 }
 
-export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Уууупс";
   let details = "Этот казус мы еще не продумали";
   let stack: string | undefined;
@@ -96,3 +97,4 @@ export function ErrorBoundary({error}: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+

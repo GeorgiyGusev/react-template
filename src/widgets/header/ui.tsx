@@ -1,4 +1,4 @@
-import {Logos} from "~/widgets/logos";
+import {Logos} from "@/widgets/logos";
 
 export default function Header() {
   return (
