@@ -1,9 +1,6 @@
-import type {Route} from "./+types/home";
-import Welcome from "~/features/welcome/pages/Welcome";
-import {useLoaderData} from "react-router";
-import type {JSX} from "react";
+import {Welcome} from "~/pages/welcome";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     {title: "New React Router App"},
     {name: "description", content: "Welcome to React Router!"},
@@ -11,7 +8,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 
-export async function loader({params}: Route.LoaderArgs) {
+export async function loader() {
   return [
     {
       href: "https://reactrouter.com/docs",
@@ -56,14 +53,6 @@ export async function loader({params}: Route.LoaderArgs) {
 }
 
 
-interface loadedDataItem {
-  href: string;
-  text: string;
-  icon: JSX.Element;
-}
-
 export default function Home() {
-  const loadedData: loadedDataItem[] = useLoaderData()
-
-  return <Welcome resources={loadedData}/>;
+  return <Welcome/>;
 }

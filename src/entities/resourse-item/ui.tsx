@@ -1,10 +1,7 @@
-import type {JSX} from "react";
+import type {Resourse} from "./model";
 
 
-export interface Props {
-  href: string;
-  text: string;
-  icon: JSX.Element;
+export interface Props extends Resourse {
 }
 
 export default function ResourceItem(props: Props) {

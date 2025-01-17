@@ -1,10 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit'
-import counterReducer from "~/features/welcome/store/clicker-slice"
+import {counterSlice} from "~/features/counter/rtk-slice";
 // ...
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    counter: counterSlice.reducer,
   }
 })
 

@@ -1,9 +1,9 @@
-import Logo from "~/features/welcome/components/Logo";
+import {Logos} from "~/widgets/logos";
 
 export default function Header() {
   return (
     <header className="flex flex-col items-center gap-9">
-      <Logo />
+      <Logos/>
     </header>
   );
 }

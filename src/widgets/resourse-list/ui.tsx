@@ -1,14 +1,7 @@
-import ResourceItem from "~/features/welcome/components/ResourseItem";
-import type {JSX} from "react";
-
-interface Resource {
-  href: string;
-  text: string;
-  icon: JSX.Element;
-}
+import {type Resourse, ResourceItem} from "~/entities/resourse-item";
 
 interface Props {
-  resources: Resource[];
+  resources: Resourse[];
 }
 
 

@@ -1,4 +1,4 @@
-import Counter from "~/features/welcome/components/Counter";
+import {Counter} from "~/features/counter";
 
 function Clicker() {
   return (

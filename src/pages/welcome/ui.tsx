@@ -1,20 +1,14 @@
-import Header from "~/features/welcome/widgets/Header";
-import ResourceList from "~/features/welcome/widgets/ResourseList";
-import type {JSX} from "react";
-import Clicker from "~/features/welcome/widgets/Clicker";
-
-interface Resource {
-  href: string;
-  text: string;
-  icon: JSX.Element;
-}
-
-interface Props {
-  resources: Resource[];
-}
+import {Header} from "~/widgets/header";
+import {ResourceList} from "~/widgets/resourse-list";
+import {Clicker} from "~/widgets/clicker";
+import {useLoaderData} from "react-router";
+import type {Resourse} from "~/entities/resourse-item";
 
 
-export default function Welcome({resources}: Props) {
+export default function Welcome() {
+  const resources = useLoaderData<Resourse[]>()
+
+
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">

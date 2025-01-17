@@ -1,7 +1,7 @@
 import logoDark from "assets/logo-dark.svg";
 import logoLight from "assets/logo-light.svg";
 
-export default function Logo() {
+export default function Logos() {
   return (
     <div className="w-[500px] max-w-[100vw] p-4">
       <img

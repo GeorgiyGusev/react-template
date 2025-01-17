@@ -1,10 +1,8 @@
-import {incrementByAmount, reset, selectCount} from "~/features/welcome/store/clicker-slice";
-import {useAppDispatch, useAppSelector} from "~/hooks";
-import {store} from "~/store";
+import {useAppDispatch, useAppSelector} from "~/app/store/hooks";
+import {selectCount, incrementByAmount, reset} from "~/features/counter/rtk-slice";
 
-type Props = {}
 
-function Counter(props: Props) {
+function Counter() {
   const count = useAppSelector(selectCount)
   const dispatch = useAppDispatch()
 
